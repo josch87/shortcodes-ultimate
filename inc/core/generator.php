@@ -98,7 +98,7 @@ class Su_Generator {
 				<div id="su-generator-header">
 					<div id="su-generator-tools"><?php echo implode( ' <span></span> ', $tools ); ?></div>
 					<input type="text" name="su_generator_search" id="su-generator-search" value="" placeholder="<?php _e( 'Search for shortcodes', 'shortcodes-ultimate' ); ?>" />
-					<p id="su-generator-search-pro-tip"><?php printf( '<strong>%s:</strong> %s', __( 'Pro Tip', 'shortcodes-ultimate' ), __( 'Hit enter to select highlighted shortcode, while searching' ) ) ?></p>
+					<p id="su-generator-search-pro-tip"><?php printf( '<strong>%s:</strong> %s', __( 'Pro Tip', 'shortcodes-ultimate' ), __( 'Hit enter to select highlighted shortcode, while searching', 'shortcodes-ultimate' ) ) ?></p>
 					<div id="su-generator-filter">
 						<strong><?php _e( 'Filter by type', 'shortcodes-ultimate' ); ?></strong>
 						<?php foreach ( (array) Su_Data::groups() as $group => $label ) echo '<a href="#" data-filter="' . $group . '">' . $label . '</a>'; ?>
